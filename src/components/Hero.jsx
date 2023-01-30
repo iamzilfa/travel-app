@@ -19,11 +19,22 @@ const Hero = () => {
         <h2 className="py-4">Top 1% Locations Worldwide</h2>
         <form className="max-w-[700px] flex justify-between items-center mx-auto w-full border p-1 rounded-md text-black bg-gray-100/90">
           <div>
-            <input className="bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none" type="text" placeholder="Search Destinations" />
+            <input
+              className="bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none"
+              type="text"
+              placeholder="Search Destinations"
+            />
           </div>
           <div>
-            <button>
-              <AiOutlineSearch size={20} className="icon" style={{color:'#fffff'}} />
+            <button
+              type="button"
+              className="bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)]"
+            >
+              <AiOutlineSearch
+                size={20}
+                className="icon"
+                style={{ color: "#fffff" }}
+              />
             </button>
           </div>
         </form>
