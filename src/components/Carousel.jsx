@@ -3,9 +3,11 @@ import { carouselData } from "./CarouselData";
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 
 const Carousel = () => {
+  
   const [slide, setSlide] = useState(0);
   const length = carouselData.length;
 //   console.log(length)
+
   const nextSlide = () => {
     setSlide(slide === length - 1 ? 0 : slide +1)
   }
